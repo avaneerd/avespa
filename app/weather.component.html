@@ -4,8 +4,10 @@
 </div>
 
 <div class="jumbotron" *ngIf="weather">
-    <h1 *ngIf="weather.list[0].weather.main !== 'Clear'">The weather in {{ weather.city.name }} is shit! :-(</h1>
-    <h1 *ngIf="weather.list[0].weather.main === 'Clear'">The weather in {{ weather.city.name }} is nice! ;-)</h1>  
+    sdfsdf
+    {{ weather.list[0].weather[0].id }}
+    <h1 *ngIf="weather.list[0].weather[0].id !== 800">The weather in {{ weather.city.name }} is shit! :-(</h1>
+    <h1 *ngIf="weather.list[0].weather[0].id === 800">The weather in {{ weather.city.name }} is nice! ;-)</h1>  
 </div>
 
 <div class="jumbotron" *ngIf="weather">
